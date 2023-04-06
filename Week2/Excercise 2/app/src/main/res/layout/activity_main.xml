@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:text="Nguyễn Đức Toàn"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textColor="#000"
+            android:backgroundTint="#FF0000"/>
+
+        <Button
+            android:id="@+id/green_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textColor="#000"
+            android:backgroundTint="#008000"/>
+
+        <Button
+            android:id="@+id/blue_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textColor="#000"
+            android:backgroundTint="#0000FF"/>
+
+        <Button
+            android:id="@+id/gray_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Gray"
+            android:backgroundTint="#808080"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
