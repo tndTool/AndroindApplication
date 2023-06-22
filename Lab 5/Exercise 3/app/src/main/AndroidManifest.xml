@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.exercise3">
+    package="com.unique.simplealarmclock">
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
     <application
@@ -13,8 +13,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activities.RingActivity"
             android:theme="@style/NoActionBar"></activity>
-        <activity android:name=".activities.MainActivity"
-            android:exported="true">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +21,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".broadcastreciever.AlarmBroadcastReceiver"
-            android:exported="false">
+        <receiver android:name=".broadcastreciever.AlarmBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>

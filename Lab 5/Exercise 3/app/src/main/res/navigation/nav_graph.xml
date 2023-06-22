@@ -7,23 +7,23 @@
 
     <fragment
         android:id="@+id/alarmsListFragment"
-        android:name="com.example.exercise3.fragments.AlarmsListFragment"
+        android:name="com.unique.simplealarmclock.fragments.AlarmsListFragment"
         android:label="My Alarms"
         tools:layout="@layout/fragment_alarms_list">
         <action
             android:id="@+id/action_alarmsListFragment_to_createAlarmFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
             app:destination="@id/createAlarmFragment" />
     </fragment>
     <fragment
         android:id="@+id/createAlarmFragment"
-        android:name="com.example.exercise3.fragments.CreateAlarmFragment"
+        android:name="com.unique.simplealarmclock.fragments.CreateAlarmFragment"
         android:label="Schedule Alarm">
         <action
             android:id="@+id/action_createAlarmFragment_to_alarmsListFragment"
-            app:popEnterAnim="@anim/nav_default_enter_anim"
-            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
             app:popUpTo="@id/alarmsListFragment" />
     </fragment>
 </navigation>
