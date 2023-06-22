@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.exercise4">
+    package="com.tutorial.tvapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,14 +11,14 @@
     <uses-feature android:name="android.hardware.touchscreen"
         android:required="false" />
 
+
     <application
         android:allowBackup="true"
+        android:banner="@mipmap/ic_launcher"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Exercise4"
-        android:banner="@mipmap/ic_launcher"
-        >
+        android:theme="@style/Theme.TvApp">
         <activity
             android:name=".MainActivity"
             android:exported="true">
